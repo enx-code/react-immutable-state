@@ -8,6 +8,9 @@ function App() {
   const addNewWorkout = () => {
     const newWorkout = generateWorkout()
     console.log("addNewWorkout:", newWorkout)
+    const newWorkOutArray = [...workouts, newWorkout];
+    setWorkouts(newWorkOutArray)
+    
   }
 
   const deleteWorkout = (workout) => {
