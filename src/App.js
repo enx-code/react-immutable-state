@@ -27,6 +27,8 @@ function App() {
 
   const completeWorkout = (targetWorkout) => {
     console.log("completeWorkout:", targetWorkout)
+
+    // BASIC Function/Method
     // const newArray = [];
     // for (let i = 0; i < workouts.length; i++){
     //   if(workouts[i] !== targetWorkout){
@@ -39,6 +41,32 @@ function App() {
     //   }
     // }
     // setWorkouts(newArray)
+
+
+    //  MAP function:
+  //   const newArrayForMap = workouts.map(workout => {
+  //     if (workout === targetWorkout){
+  //       const workOutCopy = {...workouts}
+  //       workOutCopy.done = !workOutCopy.done
+  //       return workOutCopy
+  //     } else {
+  //       return workout
+  //     }
+      
+  //   })
+  //   setWorkouts(newArrayForMap)
+
+//  MORE CONCISE VERSION:
+
+const newArreyMapShort = workouts.map((workout) => {
+  if(workout === targetWorkout) {return{...workouts, done: !workout.done};
+} 
+   return workout;
+});
+setWorkouts(newArreyMapShort)
+
+
+
   }
 
   return (
