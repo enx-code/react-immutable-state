@@ -25,8 +25,20 @@ function App() {
 
   }
 
-  const completeWorkout = (workout) => {
-    console.log("completeWorkout:", workout)
+  const completeWorkout = (targetWorkout) => {
+    console.log("completeWorkout:", targetWorkout)
+    // const newArray = [];
+    // for (let i = 0; i < workouts.length; i++){
+    //   if(workouts[i] !== targetWorkout){
+    //     newArray.push(workouts[i])
+    //   } else {
+    //     const workOutCopy = { ...workouts[i] };
+    //     workOutCopy.done = !workOutCopy.done
+    //     newArray.push(workOutCopy)
+
+    //   }
+    // }
+    // setWorkouts(newArray)
   }
 
   return (
